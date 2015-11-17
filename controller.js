@@ -22,5 +22,5 @@ countryApp.controller('countryCntrl', function($scope, $http){
 }); 
 
 countryApp.controller('countryDetailCntrl', function($scope, $routeParams){
-	console.log($routeParams);
+	$scope.name = $routeParams.countryName;
 });
